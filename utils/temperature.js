@@ -4,7 +4,10 @@ const UNITS = {
 };
 
 function convertTemperatureTo(temperature, unitTo){
-    if(unitTo === UNITS.celsius){
+    // console.log("In convertTemperatureTo");
+    // console.log("Temperature: " + temperature + " unitTo: " + unitTo);
+
+    if(unitTo === UNITS.celcius){
         return (temperature - 32) / 1.8;
     }else if(unitTo == UNITS.fahrenheit){
         return temperature * 1.8 + 32;
@@ -13,7 +16,7 @@ function convertTemperatureTo(temperature, unitTo){
     }
 }
 
-function getOppositeUnit( unit){
-    return unit===UNITS.celcius ? UNITS.fahrenheit: UNITS.celcius;
+function getOppositeUnit( unit){    
+    return unit===UNITS.celcius ? UNITS.fahrenheit : UNITS.celcius;
 }
 export {UNITS, convertTemperatureTo, getOppositeUnit};

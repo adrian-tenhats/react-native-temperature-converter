@@ -15,12 +15,7 @@ export default function App() {
   const oppositeUnit = getOppositeUnit(currentUnits);
   
 
-  function getConvertedTemperature() {
-    console.log("In getConvertedTemperature");
-
-    console.log(inputValue);
-    
-
+  function getConvertedTemperature() {       
     if(isNaN(inputValue)) {
       return "";
     }else {
